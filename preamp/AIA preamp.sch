@@ -1,0 +1,297 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:kemet-ec2-5nu
+LIBS:max4617
+LIBS:mcp42100
+LIBS:AIA preamp-cache
+EELAYER 27 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 1 4
+Title "AIA Rev. B Preamp Board"
+Date "9 mar 2014"
+Rev "B01"
+Comp "Ali Kocaturk"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L DGND #PWR104
+U 1 1 531BF5EE
+P 2750 1050
+F 0 "#PWR104" H 2750 1050 40  0001 C CNN
+F 1 "DGND" H 2750 980 40  0000 C CNN
+F 2 "" H 2750 1050 60  0000 C CNN
+F 3 "" H 2750 1050 60  0000 C CNN
+	1    2750 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L AGND #PWR105
+U 1 1 531BF5EF
+P 2450 1150
+F 0 "#PWR105" H 2450 1150 40  0001 C CNN
+F 1 "AGND" H 2450 1080 50  0000 C CNN
+F 2 "" H 2450 1150 60  0000 C CNN
+F 3 "" H 2450 1150 60  0000 C CNN
+	1    2450 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5VD #PWR102
+U 1 1 531BF5F0
+P 1450 950
+F 0 "#PWR102" H 1450 900 20  0001 C CNN
+F 1 "+5VD" H 1450 1050 30  0000 C CNN
+F 2 "" H 1450 950 60  0000 C CNN
+F 3 "" H 1450 950 60  0000 C CNN
+	1    1450 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5VA #PWR103
+U 1 1 531BF5F1
+P 1300 1050
+F 0 "#PWR103" H 1300 1180 20  0001 C CNN
+F 1 "+5VA" H 1300 1150 30  0000 C CNN
+F 2 "" H 1300 1050 60  0000 C CNN
+F 3 "" H 1300 1050 60  0000 C CNN
+	1    1300 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5VA #PWR101
+U 1 1 531BF5F2
+P 650 700
+F 0 "#PWR101" H 650 830 20  0001 C CNN
+F 1 "+5VA" H 650 800 30  0000 C CNN
+F 2 "" H 650 700 60  0000 C CNN
+F 3 "" H 650 700 60  0000 C CNN
+	1    650  700 
+	1    0    0    -1  
+$EndComp
+$Comp
+L AGND #PWR106
+U 1 1 531BF5F3
+P 650 1300
+F 0 "#PWR106" H 650 1300 40  0001 C CNN
+F 1 "AGND" H 650 1230 50  0000 C CNN
+F 2 "" H 650 1300 60  0000 C CNN
+F 3 "" H 650 1300 60  0000 C CNN
+	1    650  1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1 C101
+U 1 1 531BF5F4
+P 650 1000
+F 0 "C101" H 700 1100 50  0000 L CNN
+F 1 "100u" H 700 900 50  0000 L CNN
+F 2 "~" H 650 1000 60  0000 C CNN
+F 3 "~" H 650 1000 60  0000 C CNN
+	1    650  1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG101
+U 1 1 531BF5FC
+P 1050 700
+F 0 "#FLG101" H 1050 795 30  0001 C CNN
+F 1 "PWR_FLAG" H 1050 880 30  0000 C CNN
+F 2 "" H 1050 700 60  0000 C CNN
+F 3 "" H 1050 700 60  0000 C CNN
+	1    1050 700 
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG102
+U 1 1 531BF5FD
+P 1050 1300
+F 0 "#FLG102" H 1050 1395 30  0001 C CNN
+F 1 "PWR_FLAG" H 1050 1480 30  0000 C CNN
+F 2 "" H 1050 1300 60  0000 C CNN
+F 3 "" H 1050 1300 60  0000 C CNN
+	1    1050 1300
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_2X2 J101
+U 1 1 531BF611
+P 1900 1050
+F 0 "J101" H 1900 1200 50  0000 C CNN
+F 1 "PRE PWR" H 1910 920 40  0000 C CNN
+F 2 "" H 1900 1050 60  0000 C CNN
+F 3 "" H 1900 1050 60  0000 C CNN
+	1    1900 1050
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 4150 1050 1300 550 
+U 531C1BBE
+F0 "Line-In Selector" 50
+F1 "linesel.sch" 50
+F2 "SEL_ADDR2" I L 4150 1350 60 
+F3 "SEL_ADDR1" I L 4150 1250 60 
+F4 "SEL_ADDR0" I L 4150 1150 60 
+F5 "SELOUT_R" O R 5450 1450 60 
+F6 "SELOUT_L" O R 5450 1350 60 
+$EndSheet
+$Sheet
+S 6250 1050 1100 800 
+U 531C4C23
+F0 "VolGainTone" 50
+F1 "volgaintone.sch" 50
+F2 "PREIN_L" I L 6250 1200 60 
+F3 "PREIN_R" I L 6250 1300 60 
+F4 "SPI_MOSI" I L 6250 1500 60 
+F5 "SPI_SCK" I L 6250 1600 60 
+F6 "POT_CS" I L 6250 1700 60 
+$EndSheet
+$Comp
+L CONN_4X2 J102
+U 1 1 531C9B9A
+P 4750 2250
+F 0 "J102" H 4750 2500 50  0000 C CNN
+F 1 "PRE CTL" V 4750 2250 40  0000 C CNN
+F 2 "" H 4750 2250 60  0000 C CNN
+F 3 "" H 4750 2250 60  0000 C CNN
+	1    4750 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	650  700  650  800 
+Wire Wire Line
+	650  1200 650  1300
+Wire Wire Line
+	2450 1150 2450 1100
+Wire Wire Line
+	2450 1100 2300 1100
+Wire Wire Line
+	2300 1000 2750 1000
+Wire Wire Line
+	2750 1000 2750 1050
+Wire Wire Line
+	1300 1050 1300 1100
+Wire Wire Line
+	1300 1100 1500 1100
+Wire Wire Line
+	1450 950  1450 1000
+Wire Wire Line
+	1450 1000 1500 1000
+Connection ~ 650  750 
+Connection ~ 650  1250
+Wire Wire Line
+	650  750  1050 750 
+Wire Wire Line
+	1050 750  1050 700 
+Wire Wire Line
+	650  1250 1050 1250
+Wire Wire Line
+	1050 1250 1050 1300
+Wire Wire Line
+	5450 1350 5550 1350
+Wire Wire Line
+	5550 1350 5550 1200
+Wire Wire Line
+	5550 1200 6250 1200
+Wire Wire Line
+	5450 1450 5650 1450
+Wire Wire Line
+	5650 1450 5650 1300
+Wire Wire Line
+	5650 1300 6250 1300
+Wire Wire Line
+	3950 2200 3950 1350
+Wire Wire Line
+	3950 1350 4150 1350
+Wire Wire Line
+	4150 1250 4050 1250
+Wire Wire Line
+	4050 1250 4050 1900
+Wire Wire Line
+	4050 1900 5150 1900
+Wire Wire Line
+	4150 1150 3850 1150
+Wire Wire Line
+	3850 1150 3850 2100
+Wire Wire Line
+	3850 2100 4350 2100
+Wire Wire Line
+	5750 1500 6250 1500
+Wire Wire Line
+	6250 1600 5850 1600
+Wire Wire Line
+	5950 1700 6250 1700
+Wire Wire Line
+	4350 2200 3950 2200
+Wire Wire Line
+	4200 2550 5850 2550
+Wire Wire Line
+	5950 2300 5950 1700
+Wire Wire Line
+	5850 2550 5850 1600
+Wire Wire Line
+	5750 2200 5750 1500
+Wire Wire Line
+	5150 1900 5150 2100
+Wire Wire Line
+	5150 2200 5750 2200
+Wire Wire Line
+	5150 2300 5950 2300
+Wire Wire Line
+	4200 2550 4200 2300
+Wire Wire Line
+	4200 2300 4350 2300
+$Sheet
+S 4250 3150 1050 400 
+U 531CFF34
+F0 "Output Switch" 50
+F1 "outputswitch.sch" 50
+F2 "HP_DET" O R 5300 3250 60 
+F3 "OP_SW" I L 4250 3250 60 
+$EndSheet
+Wire Wire Line
+	4250 3250 4100 3250
+Wire Wire Line
+	4100 3250 4100 2400
+Wire Wire Line
+	4100 2400 4350 2400
+Wire Wire Line
+	5300 3250 5400 3250
+Wire Wire Line
+	5400 3250 5400 2400
+Wire Wire Line
+	5400 2400 5150 2400
+$EndSCHEMATC

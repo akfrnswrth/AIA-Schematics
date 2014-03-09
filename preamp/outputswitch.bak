@@ -1,0 +1,322 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:kemet-ec2-5nu
+LIBS:max4617
+LIBS:mcp42100
+LIBS:AIA preamp-cache
+EELAYER 27 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 4 4
+Title "AIA Rev. B Preamp Output Switch"
+Date "9 mar 2014"
+Rev "B01"
+Comp "Ali Kocaturk"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L EC2-5NU K401
+U 1 1 531D038D
+P 2750 1300
+F 0 "K401" H 2700 1700 70  0000 C CNN
+F 1 "EC2-5NU" H 2650 1800 70  0000 C CNN
+F 2 "~" H 2750 1300 60  0000 C CNN
+F 3 "~" H 2750 1300 60  0000 C CNN
+	1    2750 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_2 J401
+U 1 1 531D0393
+P 750 1150
+F 0 "J401" V 700 1150 40  0000 C CNN
+F 1 "AMP OUTL" V 800 1150 40  0000 C CNN
+F 2 "" H 750 1150 60  0000 C CNN
+F 3 "" H 750 1150 60  0000 C CNN
+	1    750  1150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CONN_2 J402
+U 1 1 531D0399
+P 750 1550
+F 0 "J402" V 700 1550 40  0000 C CNN
+F 1 "AMP OUTR" V 800 1550 40  0000 C CNN
+F 2 "" H 750 1550 60  0000 C CNN
+F 3 "" H 750 1550 60  0000 C CNN
+	1    750  1550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L +5VD #PWR401
+U 1 1 531D039F
+P 2250 1500
+F 0 "#PWR401" H 2250 1450 20  0001 C CNN
+F 1 "+5VD" H 2250 1600 30  0000 C CNN
+F 2 "" H 2250 1500 60  0000 C CNN
+F 3 "" H 2250 1500 60  0000 C CNN
+	1    2250 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L NPN Q401
+U 1 1 531D03A5
+P 3200 2150
+F 0 "Q401" H 3200 2000 50  0000 R CNN
+F 1 "2N2222" H 3700 2000 50  0000 R CNN
+F 2 "~" H 3200 2150 60  0000 C CNN
+F 3 "~" H 3200 2150 60  0000 C CNN
+	1    3200 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L DGND #PWR402
+U 1 1 531D03AB
+P 3300 2400
+F 0 "#PWR402" H 3300 2400 40  0001 C CNN
+F 1 "DGND" H 3300 2330 40  0000 C CNN
+F 2 "" H 3300 2400 60  0000 C CNN
+F 3 "" H 3300 2400 60  0000 C CNN
+	1    3300 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R403
+U 1 1 531D03B1
+P 2650 2150
+F 0 "R403" V 2730 2150 40  0000 C CNN
+F 1 "4.7k" V 2657 2151 40  0000 C CNN
+F 2 "~" V 2580 2150 30  0000 C CNN
+F 3 "~" H 2650 2150 30  0000 C CNN
+	1    2650 2150
+	0    1    1    0   
+$EndComp
+$Comp
+L R R401
+U 1 1 531D03B8
+P 1250 2150
+F 0 "R401" V 1330 2150 40  0000 C CNN
+F 1 "470" V 1257 2151 40  0000 C CNN
+F 2 "~" V 1180 2150 30  0000 C CNN
+F 3 "~" H 1250 2150 30  0000 C CNN
+	1    1250 2150
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R405
+U 1 1 531D03BE
+P 1250 2750
+F 0 "R405" V 1330 2750 40  0000 C CNN
+F 1 "470" V 1257 2751 40  0000 C CNN
+F 2 "~" V 1180 2750 30  0000 C CNN
+F 3 "~" H 1250 2750 30  0000 C CNN
+	1    1250 2750
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_4 J403
+U 1 1 531D03C4
+P 2250 2900
+F 0 "J403" V 2200 2900 50  0000 C CNN
+F 1 "HP OUT/DET" V 2300 2900 50  0000 C CNN
+F 2 "" H 2250 2900 60  0000 C CNN
+F 3 "" H 2250 2900 60  0000 C CNN
+	1    2250 2900
+	1    0    0    1   
+$EndComp
+$Comp
+L R R402
+U 1 1 531D03CA
+P 1500 2150
+F 0 "R402" V 1580 2150 40  0000 C CNN
+F 1 "470" V 1507 2151 40  0000 C CNN
+F 2 "~" V 1430 2150 30  0000 C CNN
+F 3 "~" H 1500 2150 30  0000 C CNN
+	1    1500 2150
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R406
+U 1 1 531D03D0
+P 1500 2750
+F 0 "R406" V 1580 2750 40  0000 C CNN
+F 1 "470" V 1507 2751 40  0000 C CNN
+F 2 "~" V 1430 2750 30  0000 C CNN
+F 3 "~" H 1500 2750 30  0000 C CNN
+	1    1500 2750
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R404
+U 1 1 531D03D6
+P 2200 2550
+F 0 "R404" V 2280 2550 40  0000 C CNN
+F 1 "1k" V 2207 2551 40  0000 C CNN
+F 2 "~" V 2130 2550 30  0000 C CNN
+F 3 "~" H 2200 2550 30  0000 C CNN
+	1    2200 2550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L SPEAKER SP402
+U 1 1 531D03DD
+P 3900 1650
+F 0 "SP402" H 4300 1800 70  0000 C CNN
+F 1 "SPK OUTR" H 4450 1650 70  0000 C CNN
+F 2 "~" H 3900 1650 60  0000 C CNN
+F 3 "~" H 3900 1650 60  0000 C CNN
+	1    3900 1650
+	1    0    0    1   
+$EndComp
+$Comp
+L SPEAKER SP401
+U 1 1 531D03E3
+P 3900 1000
+F 0 "SP401" H 4300 1150 70  0000 C CNN
+F 1 "SPK OUTL" H 4450 1000 70  0000 C CNN
+F 2 "~" H 3900 1000 60  0000 C CNN
+F 3 "~" H 3900 1000 60  0000 C CNN
+	1    3900 1000
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	1100 1050 2350 1050
+Wire Wire Line
+	1100 1450 2000 1450
+Wire Wire Line
+	2000 1450 2000 1350
+Wire Wire Line
+	2000 1350 2350 1350
+Wire Wire Line
+	2250 1500 2250 1550
+Wire Wire Line
+	2250 1550 2350 1550
+Wire Wire Line
+	1100 1650 1850 1650
+Wire Wire Line
+	2950 1850 1850 1850
+Wire Wire Line
+	1850 1850 1850 1650
+Wire Wire Line
+	2250 1650 2350 1650
+Wire Wire Line
+	3300 2400 3300 2350
+Wire Wire Line
+	2900 2150 3000 2150
+Wire Wire Line
+	2950 1850 2950 1750
+Wire Wire Line
+	2950 1750 3600 1750
+Wire Wire Line
+	2250 1650 2250 1950
+Wire Wire Line
+	2250 1950 3300 1950
+Wire Wire Line
+	1250 2400 1250 2500
+Wire Wire Line
+	1500 2400 1500 2500
+Wire Wire Line
+	1250 1900 1250 1050
+Connection ~ 1250 1050
+Wire Wire Line
+	1500 1900 1500 1450
+Connection ~ 1500 1450
+Wire Wire Line
+	1250 3050 1900 3050
+Wire Wire Line
+	1250 3050 1250 3000
+Wire Wire Line
+	1500 3050 1500 3000
+Connection ~ 1500 3050
+Wire Wire Line
+	1900 2950 1750 2950
+Wire Wire Line
+	1750 2950 1750 3150
+Wire Wire Line
+	1750 3150 1100 3150
+Wire Wire Line
+	1100 3150 1100 2450
+Wire Wire Line
+	1100 2450 1250 2450
+Connection ~ 1250 2450
+Wire Wire Line
+	1500 2450 1650 2450
+Wire Wire Line
+	1650 2450 1650 2850
+Wire Wire Line
+	1650 2850 1900 2850
+Connection ~ 1500 2450
+Wire Wire Line
+	1900 2750 1900 2550
+Wire Wire Line
+	1900 2550 1950 2550
+Wire Wire Line
+	1350 3050 1350 1650
+Connection ~ 1350 1650
+Connection ~ 1350 3050
+Wire Wire Line
+	3600 1550 3200 1550
+Wire Wire Line
+	3200 1550 3200 1450
+Wire Wire Line
+	3200 1450 3150 1450
+Wire Wire Line
+	1200 1650 1200 1250
+Wire Wire Line
+	1200 1250 1100 1250
+Connection ~ 1200 1650
+Wire Wire Line
+	3500 1750 3500 1100
+Wire Wire Line
+	3500 1100 3600 1100
+Connection ~ 3500 1750
+Wire Wire Line
+	3150 1150 3350 1150
+Wire Wire Line
+	3350 1150 3350 900 
+Wire Wire Line
+	3350 900  3600 900 
+NoConn ~ 3150 950 
+NoConn ~ 3150 1250
+Text HLabel 2550 2550 2    60   Output ~ 0
+HP_DET
+Text HLabel 2300 2150 0    60   Input ~ 0
+OP_SW
+Wire Wire Line
+	2300 2150 2400 2150
+Wire Wire Line
+	2550 2550 2450 2550
+$EndSCHEMATC
