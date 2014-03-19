@@ -519,7 +519,7 @@
     (fp_text reference C2 (at 2.54 -1.905 180) (layer F.SilkS)
       (effects (font (size 1.016 1.016) (thickness 0.2032)))
     )
-    (fp_text value 150p (at -0.635 1.905 180) (layer F.SilkS) hide
+    (fp_text value 100p (at -0.635 1.905 180) (layer F.SilkS) hide
       (effects (font (size 1.016 1.016) (thickness 0.2032)))
     )
     (fp_line (start -3.556 -1.016) (end 3.556 -1.016) (layer F.SilkS) (width 0.3048))

@@ -32,10 +32,10 @@ LIBS:valves
 LIBS:AIA power amp-cache
 EELAYER 27 0
 EELAYER END
-$Descr A4 11693 8268
+$Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 1
-Title "AIA Rev. B Power Supply"
+Title "AIA Rev. B Power Amp"
 Date "7 mar 2014"
 Rev "B00"
 Comp "Ali Kocaturk"

@@ -36,7 +36,7 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 1
 Title "AIA Rev. B Power Amp"
-Date "7 mar 2014"
+Date "19 mar 2014"
 Rev "B00"
 Comp "Ali Kocaturk"
 Comment1 ""
@@ -313,7 +313,7 @@ L C C2
 U 1 1 53195E0E
 P 3950 2350
 F 0 "C2" H 3950 2450 40  0000 L CNN
-F 1 "150p" H 3956 2265 40  0000 L CNN
+F 1 "100p" H 3956 2265 40  0000 L CNN
 F 2 "~" H 3988 2200 30  0000 C CNN
 F 3 "~" H 3950 2350 60  0000 C CNN
 	1    3950 2350

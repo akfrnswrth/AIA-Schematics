@@ -1,7 +1,7 @@
 (export (version D)
   (design
-    (source "C:\\Users\\Ali\\Documents\\hobby\\projects\\analog integrated amplifier\\power amp\\kicad\\AIA power amp.sch")
-    (date "3/6/2014 11:58:39 PM")
+    (source "C:/Users/Ali/Documents/GitHub/AIA-Schematics/power amp/AIA power amp.sch")
+    (date "3/18/2014 11:10:56 PM")
     (tool "eeschema (2013-07-07 BZR 4022)-stable"))
   (components
     (comp (ref C3)
@@ -56,7 +56,7 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 53195DF7))
     (comp (ref C2)
-      (value 150p)
+      (value 100p)
       (libsource (lib device) (part C))
       (sheetpath (names /) (tstamps /))
       (tstamp 53195E0E))
