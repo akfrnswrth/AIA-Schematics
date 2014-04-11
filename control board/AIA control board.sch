@@ -39,7 +39,7 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 2
 Title "AIA Rev. B Control Board"
-Date "8 mar 2014"
+Date "11 apr 2014"
 Rev "B01"
 Comp "Ali Kocaturk"
 Comment1 ""
@@ -47,17 +47,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L ATMEGA168-P U101
-U 1 1 531A59C3
-P 8600 5700
-F 0 "U101" H 7750 7000 40  0000 L BNN
-F 1 "ATMEGA168-P" H 8950 4350 40  0000 L BNN
-F 2 "DIL28" H 8600 5700 30  0000 C CIN
-F 3 "" H 8600 5700 60  0000 C CNN
-	1    8600 5700
-	1    0    0    -1  
-$EndComp
 $Comp
 L DGND #PWR01
 U 1 1 531A59C5
@@ -122,17 +111,6 @@ F 1 "AGND" H 1950 4230 50  0000 C CNN
 F 2 "" H 1950 4300 60  0000 C CNN
 F 3 "" H 1950 4300 60  0000 C CNN
 	1    1950 4300
-	1    0    0    -1  
-$EndComp
-$Comp
-L CP1 C103
-U 1 1 531A59CB
-P 1950 4000
-F 0 "C103" H 2000 4100 50  0000 L CNN
-F 1 "100u" H 2000 3900 50  0000 L CNN
-F 2 "~" H 1950 4000 60  0000 C CNN
-F 3 "~" H 1950 4000 60  0000 C CNN
-	1    1950 4000
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -281,17 +259,17 @@ Text Label 10300 4550 2    60   ~ 0
 REM_RX
 Text Label 10300 5150 2    60   ~ 0
 EE_LED
-Text Label 10300 6350 2    60   ~ 0
+Text Label 10300 5400 2    60   ~ 0
 PINC_ENTER
-Text Label 10300 6450 2    60   ~ 0
+Text Label 10300 5500 2    60   ~ 0
 PINC_BACK
-Text Label 10300 6550 2    60   ~ 0
+Text Label 10300 5600 2    60   ~ 0
 PINC_VOLUP
-Text Label 10300 6650 2    60   ~ 0
+Text Label 10300 5700 2    60   ~ 0
 PINC_VOLDN
-Text Label 10300 6750 2    60   ~ 0
+Text Label 10300 5800 2    60   ~ 0
 PINC_LEFT
-Text Label 10300 6850 2    60   ~ 0
+Text Label 10300 5900 2    60   ~ 0
 PINC_RIGHT
 Text Label 10300 6000 2    60   ~ 0
 AVR_RESET
@@ -306,19 +284,18 @@ F 3 "" H 2100 1400 60  0000 C CNN
 	1    2100 1400
 	1    0    0    -1  
 $EndComp
-Text Label 10300 5400 2    60   ~ 0
+Text Label 10300 6350 2    60   ~ 0
 SEL_ADDR0
-Text Label 10300 5500 2    60   ~ 0
+Text Label 10300 6450 2    60   ~ 0
 SEL_ADDR1
-Text Label 10300 5600 2    60   ~ 0
+Text Label 10300 6550 2    60   ~ 0
 SEL_ADDR2
 Text Label 10300 5250 2    60   ~ 0
 HP_DET
-Text Label 10300 5700 2    60   ~ 0
+Text Label 10300 6650 2    60   ~ 0
 OP_SW
-Text Label 10300 5900 2    60   ~ 0
+Text Label 6950 6000 0    60   ~ 0
 LIGHT_SENSE
-NoConn ~ 9500 5800
 NoConn ~ 9500 6150
 NoConn ~ 9500 6250
 $Comp
@@ -1414,7 +1391,7 @@ Wire Wire Line
 Wire Wire Line
 	7300 5150 7600 5150
 Wire Wire Line
-	7500 6750 7500 6950
+	7500 6650 7500 6950
 Wire Wire Line
 	7500 6850 7600 6850
 Wire Wire Line
@@ -1429,25 +1406,23 @@ Wire Wire Line
 Wire Wire Line
 	10300 5150 9500 5150
 Wire Wire Line
-	10300 6350 9500 6350
+	10300 5400 9500 5400
 Wire Wire Line
-	10300 6450 9500 6450
+	10300 5500 9500 5500
 Wire Wire Line
-	10300 6850 9500 6850
+	10300 5900 9500 5900
 Wire Wire Line
-	9500 6750 10300 6750
-Wire Wire Line
-	10300 6650 9500 6650
-Wire Wire Line
-	9500 6550 10300 6550
-Wire Wire Line
-	10300 6000 9500 6000
+	9500 5800 10300 5800
 Wire Wire Line
 	10300 5700 9500 5700
 Wire Wire Line
-	10300 5250 9500 5250
+	9500 5600 10300 5600
 Wire Wire Line
-	10300 5900 9500 5900
+	10300 6000 9500 6000
+Wire Wire Line
+	10300 6650 9500 6650
+Wire Wire Line
+	10300 5250 9500 5250
 Wire Wire Line
 	1650 1150 1650 1200
 Wire Wire Line
@@ -1523,11 +1498,11 @@ Wire Wire Line
 Wire Wire Line
 	10300 5050 9500 5050
 Wire Wire Line
-	10300 5400 9500 5400
+	10300 6350 9500 6350
 Wire Wire Line
-	9500 5500 10300 5500
+	9500 6450 10300 6450
 Wire Wire Line
-	10300 5600 9500 5600
+	10300 6550 9500 6550
 Wire Wire Line
 	1150 6650 1150 7850
 Wire Wire Line
@@ -1999,4 +1974,37 @@ Connection ~ 5800 2700
 Wire Wire Line
 	9550 2800 9550 2000
 Connection ~ 5900 2800
+$Comp
+L CAPAPOL C103
+U 1 1 5348723E
+P 1950 4000
+F 0 "C103" H 2000 4100 40  0000 L CNN
+F 1 "100u" H 2000 3900 40  0000 L CNN
+F 2 "~" H 2050 3850 30  0000 C CNN
+F 3 "~" H 1950 4000 300 0000 C CNN
+	1    1950 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L ATMEGA168-A IC101
+U 1 1 534876EA
+P 8500 5650
+F 0 "IC101" H 7750 6900 40  0000 L BNN
+F 1 "ATMEGA168-A" H 8950 4250 40  0000 L BNN
+F 2 "TQFP32" H 8500 5650 30  0000 C CIN
+F 3 "" H 8500 5650 60  0000 C CNN
+	1    8500 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 4650 7500 4650
+Connection ~ 7500 4650
+Wire Wire Line
+	6950 6000 7600 6000
+Wire Wire Line
+	7600 6650 7500 6650
+Connection ~ 7500 6750
+NoConn ~ 7600 5900
+NoConn ~ 9500 6750
+NoConn ~ 9500 6850
 $EndSCHEMATC
